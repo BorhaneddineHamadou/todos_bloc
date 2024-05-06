@@ -3,7 +3,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todosproject/bloc/todos_bloc.dart';
 import 'package:todosproject/screens/todos_screen.dart';
 
+import 'helpers/my_bloc_observer.dart';
+
 void main() {
+  Bloc.observer = MyBlocObserver();
   runApp(const MyApp());
 }
 
